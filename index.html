@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Bhabhi!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Simple lock screen — casual protection only, not real security.
+       ✏️ EDIT: change the password check in script.js if you want a different password. -->
+  <div class="lock-screen" id="lockScreen">
+    <div class="lock-card">
+      <div class="lock-icon">🔒</div>
+      <h2>This one's private</h2>
+      <p>Enter the password to open it</p>
+      <input type="password" id="lockInput" placeholder="Password" autocomplete="off" />
+      <button id="lockBtn">Unlock 🎂</button>
+      <p class="lock-error" id="lockError"></p>
+    </div>
+  </div>
+
+  <div class="bg-decor" id="bgDecor" aria-hidden="true">
+    <span class="decor balloon" style="left:6%; animation-delay:0s;">🎈</span>
+    <span class="decor balloon" style="left:80%; animation-delay:2s;">🎈</span>
+    <span class="decor balloon" style="left:45%; animation-delay:4s;">🎈</span>
+    <span class="decor star" style="left:20%; animation-delay:1s;">✨</span>
+    <span class="decor star" style="left:65%; animation-delay:3s;">⭐</span>
+    <span class="decor star" style="left:90%; animation-delay:0.5s;">✨</span>
+    <span class="decor heart" style="left:12%; animation-delay:2.5s;">💗</span>
+    <span class="decor heart" style="left:72%; animation-delay:1.5s;">💕</span>
+  </div>
+
+  <!-- ✏️ EDIT: bhabhi's name, welcome line -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-kicker">a very unnecessary website made just for</p>
+      <h1 class="hero-title">
+        Happy Birthday,<br />
+        <span class="hero-name">Bhabhi</span>! 🎂❤️
+      </h1>
+      <p class="hero-sub">
+        Warning: this page contains excessive love, unnecessary roasting,
+        and proof that you're stuck with us forever.
+      </p>
+      <button class="celebrate-btn" id="celebrateBtn">Celebrate 🎉</button>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">↓ keep scrolling, bhabhi jaan ↓</div>
+  </header>
+
+  <!-- ✏️ EDIT: message cards — copy/paste a block to add, delete to remove -->
+  <section class="section messages-section" id="messages">
+    <h2 class="section-title">Things We'd Only Say Because It's Your Birthday</h2>
+    <p class="section-sub">(you're welcome, and also we're sorry)</p>
+
+    <div class="msg-grid">
+      <div class="msg-card"><span class="msg-tag">😤</span><p>You run this whole family like it's your full-time job, and somehow we all still listen without arguing. Mostly.</p></div>
+      <div class="msg-card"><span class="msg-tag">🥹</span><p>Before you were bhabhi, you were already my favorite cousin — I just got lucky twice over.</p></div>
+      <div class="msg-card"><span class="msg-tag">🙄</span><p>You have an opinion about literally everything, and the annoying part is you're usually right.</p></div>
+      <div class="msg-card"><span class="msg-tag">😂</span><p>You can turn any ordinary day into a full drama series. Honestly, we wouldn't have it any other way.</p></div>
+      <div class="msg-card"><span class="msg-tag">❤️</span><p>You walked into this family and somehow made it feel more complete than it was before.</p></div>
+      <div class="msg-card"><span class="msg-tag">🤡</span><p>A little bossy, a little extra, and completely impossible to replace.</p></div>
+      <div class="msg-card"><span class="msg-tag">🫶</span><p>You fuss over everyone like it's your job, and the one time it's actually your turn to be spoiled, you try to dodge it.</p></div>
+      <div class="msg-card"><span class="msg-tag">😩</span><p>You give advice nobody asked for, and it still somehow ends up being exactly what we needed.</p></div>
+      <div class="msg-card"><span class="msg-tag">🥰</span><p>Cousin by blood, bhabhi by title, favorite person by default.</p></div>
+      <div class="msg-card"><span class="msg-tag">😹</span><p>You laugh the loudest at your own jokes, and somehow it's still funny every single time.</p></div>
+      <div class="msg-card"><span class="msg-tag">🙃</span><p>You worry about everyone's health, choices, and life plans except your own rest. Someone has to say it.</p></div>
+      <div class="msg-card"><span class="msg-tag">💌</span><p>This family got lucky the day you became part of it — and then got lucky all over again when it became official.</p></div>
+    </div>
+  </section>
+
+  <!-- ✏️ EDIT: photo captions below. Photos already named memory1.jpg–memory8.jpg. -->
+  <section class="section memories-section" id="memories">
+    <h2 class="section-title">Our Memories</h2>
+    <p class="section-sub">a few of the moments that prove you're one of us</p>
+
+    <div class="memories-grid">
+      <figure class="polaroid">
+        <img src="memory1.jpg" alt="A memory with bhabhi" />
+        <figcaption>Main character energy, always 💃</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory2.jpg" alt="A memory with bhabhi" />
+        <figcaption>Up to something, as usual 😌</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory3.jpg" alt="A memory with bhabhi" />
+        <figcaption>The whole gang, never complete without you</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory4.jpg" alt="A memory with bhabhi" />
+        <figcaption>Dressed up and still bossing us around 👑</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory5.jpg" alt="A memory with bhabhi" />
+        <figcaption>That one elegant moment we all remember</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory6.jpg" alt="A memory with bhabhi" />
+        <figcaption>Squad goals, bhabhi edition</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory7.jpg" alt="A memory with bhabhi" />
+        <figcaption>Under the trees, causing chaos as always 🌳</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="memory8.jpg" alt="A memory with bhabhi" />
+        <figcaption>Effortlessly stealing the spotlight ✨</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section cake-section" id="cake-section">
+    <h2 class="section-title">One More Year Older</h2>
+    <p class="section-sub">go on, do the honors</p>
+
+    <div class="cake-stage">
+      <div class="cake" id="cake">
+        <div class="candle"><div class="flame" id="flame"></div></div>
+        <div class="cake-top"></div>
+        <div class="cake-drip"></div>
+        <div class="cake-layer top-layer" id="topLayer"></div>
+        <div class="cake-layer bottom-layer" id="bottomLayer"></div>
+        <div class="knife" id="knife">🔪</div>
+      </div>
+      <div class="plate"></div>
+    </div>
+
+    <button class="cut-btn" id="cutBtn">Cut the cake 🍰</button>
+    <p class="cake-result" id="cakeResult"></p>
+  </section>
+
+  <!-- ✏️ EDIT: this is the real, heartfelt message -->
+  <section class="section secret-section" id="secret">
+    <h2 class="section-title">One Last Thing</h2>
+    <p class="section-sub">this one isn't a joke. tap it.</p>
+
+    <div class="envelope" id="envelope" tabindex="0" role="button" aria-label="Open the secret birthday message">
+      <div class="envelope-back"></div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-letter" id="envelopeLetter">
+        <p>
+          Okay, being serious for one second: you've been my favorite cousin
+          for as long as I can remember, and becoming our bhabhi just meant
+          I got to keep you even closer. You look out for everyone before
+          yourself, you hold this whole family together in ways you
+          probably don't even realize, and you deserve a birthday as
+          wonderful as you make every ordinary day feel. I hope this year
+          brings you everything you quietly wish for and never ask anyone
+          for. Happy birthday — we are so lucky to have you, today and
+          always. 💗
+        </p>
+        <p class="signature">— with love, from all of us</p>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="envelope-seal" id="envelopeSeal">💌</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>made with love, sarcasm, and way too much CSS 🎈</p>
+  </footer>
+
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+  <!-- ✏️ Background music: upload your royalty-free MP3 to GitHub named exactly "song.mp3" -->
+  <audio id="bgMusic" src="song.mp3" loop preload="none"></audio>
+
+  <button id="muteBtn" class="mute-btn" aria-label="Mute music">🔊</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
